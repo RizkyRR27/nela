@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jualan Mochi</title>
+    <link rel="stylesheet" href="nela.css">
+</head>
+<body>
+    <header>
+        <h1>Toko mochibliss</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Beranda -->
+        <section id="home">
+            <h2>Selamat Datang di Toko mochibliss!</h2>
+            <p>Kami menjual mochi lezat dengan berbagai rasa yang cocok untuk semua usia.</p>
+        </section>
+
+        <!-- Produk -->
+        <section id="products">
+            <h2>Produk Kami</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="img/mochico.jpg" alt="Mochi Rasa Coklat">
+                    <h3>Mochi Rasa Coklat</h3>
+                    <p>Harga: Rp 15.000</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/mochistraw.jpg" alt="Mochi Rasa Stroberi">
+                    <h3>Mochi Rasa Stroberi</h3>
+                    <p>Harga: Rp 16.000</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/mochimatcha.jpg" alt="Mochi Rasa Matcha">
+                    <h3>Mochi Rasa Matcha</h3>
+                    <p>Harga: Rp 17.000</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section id="contact">
+            <h2>pesan melalui pengisian dibawah ini</h2>
+            <form action="nela.php" method="POST">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Toko Mochi Lezat</p>
+    </footer>
+</body>
+</html>
